@@ -23,21 +23,11 @@ class Boxgroup extends React.Component {
       <div className='container'>
         <div className='mainbox'>
           {
-
             this.state.SW.map(sw =>
-              <Card key={sw.id} name={sw.name} fawesome={sw.fawesome} level={sw.level} />
+              <Card key={sw.id} name={sw.name} fawesome={sw.fawesome} level={sw.level} id={sw.id} />
             )
-
           }
-          <Card name="Light" fawesome="fa-regular fa-lightbulb" />
-          <Card name="AC" fawesome="fa-solid fa-air-conditioner" />
-          <Card name="Fan" fawesome="fa-solid fa-fan" />
-          <Card name="Lamp" fawesome="fa-solid fa-lightbulb" />
-          <Card name="Appertment" fawesome="fa-solid fa-table" />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+
         </div>
       </div>
     )
