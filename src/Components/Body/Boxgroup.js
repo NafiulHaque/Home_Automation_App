@@ -10,7 +10,7 @@ class Boxgroup extends React.Component {
 
 
   componentDidMount() {
-    axios.get(`https://home-automation-app-5a3d0-default-rtdb.asia-southeast1.firebasedatabase.app/sw.json`)
+    axios.get(`https://esp32-69129-default-rtdb.firebaseio.com/sw.json`)
       .then(res => {
         const SW = res.data;
         console.log(SW);

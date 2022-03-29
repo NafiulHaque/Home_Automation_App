@@ -16,7 +16,7 @@ const Card = props => {
             id: props.id
         }
         console.log(sw);
-        axios.put(`https://home-automation-app-5a3d0-default-rtdb.asia-southeast1.firebasedatabase.app/sw/${props.id}/.json`, sw)
+        axios.put(`https://esp32-69129-default-rtdb.firebaseio.com/sw/${props.id}/.json`, sw)
             .then(res => console.log(res.data))
 
     };
